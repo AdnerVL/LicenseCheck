@@ -44,6 +44,11 @@ python license_check.py --timeout 120 --append --psexec-path "C:\Tools\PsExec.ex
 
 ### Output
 - Results are saved in `results.csv` with columns: Hostname, Windows Edition, License Status
+- Example:
+  ```csv
+  Hostname,Windows Edition,License Status
+  WIN2PC,"Windows(R), Enterprise edition",Licensed
+  ```
 - Debug information is saved in `debug.log`
 
 ## Security Notes
@@ -58,3 +63,9 @@ python license_check.py --timeout 120 --append --psexec-path "C:\Tools\PsExec.ex
 
 ## License
 This script is provided as-is for internal use. See comments in the script for further details.
+
+## Version Control
+This project includes a `.gitignore` file that excludes the following file types from version control:
+- `.exe`
+- `.txt`
+- `.csv`
